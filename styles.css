@@ -1,0 +1,24 @@
+* {
+    font-family: "Raleway", sans-serif;
+}
+
+.top {
+    background-color: rgb(14, 116, 91);
+    color: rgb(255, 255, 255);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15px;
+}
+
+.header-links {
+    display: flex;
+    list-style-type: none;
+    gap: 15px;
+}
+
+img {
+    max-width: 500px;
+}
