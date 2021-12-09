@@ -1,4 +1,4 @@
-/* Each page is split into 4 parts 1,2,3,4 from top to bottom */
+/* Each page is split into 4 parts 1,2,3,4,5 from top to bottom */
 
 * {
     font-family: "Raleway", sans-serif;
@@ -18,11 +18,8 @@ button:hover {
     background: rgb(7, 61, 48);
 }
 
-.photos .text:hover {
-    color:rgb(7, 61, 48);
-}
 
-.photos img:hover {
+.photos a:hover {
     opacity: 0.5;
 }
 
@@ -34,7 +31,6 @@ button {
     border: none;
     color: #fff;
     border-radius: 3px;
-    margin-top: 20px;
 }
 
 button a {
@@ -124,4 +120,89 @@ button a {
     text-align: center;
     color:rgb(145, 4, 201);
     font-weight: bold;
+}
+
+/* part 3 */
+
+.container {
+    background-color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    padding: 75px 0;
+    margin: 30px 0;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    background-color: inherit;
+    width: 70%;
+    padding: 20px;
+}
+
+.quote.body {
+    font-style: italic;
+    font-size: 20px;
+}
+
+.quote.author {
+    align-self: flex-end;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.quote.trip-date {
+    align-self: flex-end;
+    font-size: 14px;
+    margin-top: 0;
+}
+
+/* part 4 */
+
+.book {
+    display: flex;
+    justify-content: center;
+    margin: 60px 0;
+}
+
+.book-container {
+    display: flex;
+    background-color: rgb(14, 116, 91);
+    width: 80%;
+    border-radius: 5pt;
+    padding: 20px 50px 20px 50px;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin-top: 0;
+    gap: 5px;
+}
+
+.book-container .content {
+    display: flex;
+    flex-direction: column;
+    color:rgb(255, 255, 255);
+}
+
+.book-container h4, .book-container p {
+    margin: 2px;
+}
+
+.book-container button {
+    background-color: rgb(14, 116, 91);
+    border: solid white 1pt;
+}
+
+/* part 5 */
+
+.footer {
+    background-color: rgb(14, 116, 91);
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.footer p {
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.747);
+    font-size: 12px;
 }
