@@ -1,6 +1,49 @@
+/* Each page is split into 4 parts 1,2,3,4 from top to bottom */
+
 * {
     font-family: "Raleway", sans-serif;
 }
+
+img {
+    max-width: 600px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(145, 4, 201);
+}
+
+
+button:hover {
+    background: rgb(7, 61, 48);
+}
+
+.photos .text:hover {
+    color:rgb(7, 61, 48);
+}
+
+.photos img:hover {
+    opacity: 0.5;
+}
+
+button {
+    background-color: rgb(112, 207, 117);
+    padding: 15px 32px;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+    margin-top: 20px;
+}
+
+button a {
+    color: #fff;
+    display: inline;
+    padding: 15px 32px;
+}
+
+/* part 1 */
 
 .top {
     background-color: rgb(14, 116, 91);
@@ -16,9 +59,69 @@
 .header-links {
     display: flex;
     list-style-type: none;
-    gap: 15px;
+    gap: 30px;
+    font-size: 18px;
 }
 
-img {
-    max-width: 500px;
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 50px 10px;
+}
+
+.intro.text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 15px;
+    align-items: flex-start;
+}
+
+.intro img {
+    margin: 15px;
+    border: white solid 1pt;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+/* part 2 */
+
+.media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.media h3 {
+    color:rgb(7, 61, 48)
+}
+
+.media .photos {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.media .photos a {
+    flex: 1;
+    display: flex;
+    flex-direction:  column;
+    align-items: center;
+    margin: 10px;
+}
+
+.media .photos img {
+    max-width: 200px;
+    border-radius: 20px;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+.photos .text {
+    text-align: center;
+    color:rgb(145, 4, 201);
+    font-weight: bold;
 }
