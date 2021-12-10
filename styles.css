@@ -2,10 +2,15 @@
 
 * {
     font-family: "Raleway", sans-serif;
+    font-weight: 200;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 400;
 }
 
 img {
-    max-width: 600px;
+    max-width: 400px;
 }
 
 a {
@@ -13,30 +18,30 @@ a {
     color: rgb(145, 4, 201);
 }
 
-
-button:hover {
+.button:hover {
     background: rgb(7, 61, 48);
 }
-
 
 .photos a:hover {
     opacity: 0.5;
 }
 
-button {
+.button {
     background-color: rgb(112, 207, 117);
     padding: 15px 32px;
-    font-weight: bold;
     font-size: 15px;
     border: none;
     color: #fff;
     border-radius: 3px;
 }
 
-button a {
+.button a {
     color: #fff;
     display: inline;
     padding: 15px 32px;
+    font-weight: 400;
+    font-family: "Amatic SC", cursive;
+    font-size: 30px;
 }
 
 /* part 1 */
@@ -44,26 +49,55 @@ button a {
 .top {
     background-color: rgb(14, 116, 91);
     color: rgb(255, 255, 255);
+    padding: 10px;
+    
 }
 
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 0px 15px;
+    border-bottom: dashed white 1px;
+}
+
+.header h1 {
+    font-family: "Amatic SC", cursive;
+    font-size: 40px;
+    margin: 0;
+    padding: 5px;
 }
 
 .header-links {
     display: flex;
     list-style-type: none;
     gap: 30px;
-    font-size: 18px;
+    font-size: 30px;
+    margin: 0;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.header-links a {
+    font-family: "Amatic SC", cursive;
+    color: #fff;
+}
+
+.header-links a:hover {
+    opacity: .60;
 }
 
 .intro {
     display: flex;
+    justify-content: center;
+}
+
+.intro-container {
+    display: flex;
     align-items: center;
-    justify-content: flex-start;
-    margin: 50px 10px;
+    justify-content: center;
+    margin: 10px 10px 50px;
+    max-width: 70%;
 }
 
 .intro.text {
@@ -74,7 +108,7 @@ button a {
     align-items: flex-start;
 }
 
-.intro img {
+.intro-container img {
     margin: 15px;
     border: white solid 1pt;
     max-width: 100%;
@@ -86,21 +120,29 @@ button a {
 
 .media {
     display: flex;
+    justify-content: center;
+}
+
+.media-container {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    width: 65%;
 }
 
-.media h3 {
-    color:rgb(7, 61, 48)
+.media-container h3 {
+    color:rgb(7, 61, 48);
+    font-family: "Amatic SC", cursive;
+    font-size: 35px;
 }
 
-.media .photos {
+.media-container .photos {
     display: flex;
     align-items: center;
     padding: 10px;
 }
 
-.media .photos a {
+.media-container .photos a {
     flex: 1;
     display: flex;
     flex-direction:  column;
@@ -108,7 +150,7 @@ button a {
     margin: 10px;
 }
 
-.media .photos img {
+.media-container .photos img {
     max-width: 200px;
     border-radius: 20px;
     max-width: 100%;
@@ -119,7 +161,6 @@ button a {
 .photos .text {
     text-align: center;
     color:rgb(145, 4, 201);
-    font-weight: bold;
 }
 
 /* part 3 */
@@ -136,7 +177,7 @@ button a {
     display: flex;
     flex-direction: column;
     background-color: inherit;
-    width: 70%;
+    width: 60%;
     padding: 20px;
 }
 
@@ -168,10 +209,10 @@ button a {
 .book-container {
     display: flex;
     background-color: rgb(14, 116, 91);
-    width: 80%;
+    width: 50%;
     border-radius: 5pt;
-    padding: 20px 50px 20px 50px;
-    align-items: flex-end;
+    padding: 30px 50px;
+    align-items: center;
     justify-content: space-around;
     margin-top: 0;
     gap: 5px;
@@ -187,9 +228,13 @@ button a {
     margin: 2px;
 }
 
-.book-container button {
+.book-container .button {
     background-color: rgb(14, 116, 91);
     border: solid white 1pt;
+}
+
+.book-container .button:hover {
+    opacity: .5;
 }
 
 /* part 5 */
