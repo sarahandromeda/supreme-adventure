@@ -41,7 +41,8 @@ a {
     padding: 15px 32px;
     font-weight: 400;
     font-family: "Amatic SC", cursive;
-    font-size: 30px;
+    font-size: 26px;
+    white-space: nowrap;
 }
 
 /* part 1 */
@@ -151,11 +152,10 @@ a {
 }
 
 .media-container .photos img {
-    max-width: 200px;
     border-radius: 20px;
-    max-width: 100%;
-    width: auto;
-    height: auto;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
 }
 
 .photos .text {
